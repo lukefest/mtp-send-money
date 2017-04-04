@@ -28,23 +28,12 @@
     Enter prionser details
   </h1>
 
-  <form method="post" action=".">
+  <form method="get" action="/enter_amount">
       <input type="hidden" name="csrfmiddlewaretoken" value="2QaIhv1ueDXiT2ropJ3MMHgUZb1lW7TDDFEJ1L2tCntEGd5XFL2gG0xPvkoggbCU">
-
-
-
-
-
-
-
-
 
 
       <fieldset>
         <legend class="visuallyhidden">Prisoner details</legend>
-
-
-
 
 
 
@@ -55,14 +44,7 @@
     Prisoner name
   </label>
 
-
-
-
-
-
-
-
-    <input id="id_prisoner_name" class="form-control " name="prisoner_name" value="" type="text">
+    <input id="id_prisoner_name" class="form-control " name="prisoner_name" value="James Halls" type="text">
   </div>
 
 
@@ -80,15 +62,15 @@
             <div>
               <div class="form-date-day ">
                 <label id="id_prisoner_dob_0-label" class="form-label" for="id_prisoner_dob_0">Day</label>
-                <input class="form-control" id="id_prisoner_dob_0" name="prisoner_dob_0" value="" type="number">
+                <input class="form-control" id="id_prisoner_dob_0" name="prisoner_dob_0" value="21" type="number">
               </div>
               <div class="form-date-month ">
                 <label id="id_prisoner_dob_1-label" class="form-label" for="id_prisoner_dob_1">Month</label>
-                <input class="form-control" id="id_prisoner_dob_1" name="prisoner_dob_1" value="" type="number">
+                <input class="form-control" id="id_prisoner_dob_1" name="prisoner_dob_1" value="1" type="number">
               </div>
               <div class="form-date-year ">
                 <label id="id_prisoner_dob_2-label" class="form-label" for="id_prisoner_dob_2">Year</label>
-                <input class="form-control form-year-field" id="id_prisoner_dob_2" name="prisoner_dob_2" value="" type="number" data-era-boundary="7">
+                <input class="form-control form-year-field" id="id_prisoner_dob_2" name="prisoner_dob_2" value="1989" type="number" data-era-boundary="7">
               </div>
             </div>
           </div>
@@ -105,12 +87,7 @@
 
     <div class="form-hint">For example, A1234BC</div>
 
-
-
-
-
-
-            <input class="form-control mtp-prisoner-number" id="id_prisoner_number" name="prisoner_number" value="" type="text">
+    <input class="form-control mtp-prisoner-number" id="id_prisoner_number" name="prisoner_number" value="A1409AE" type="text">
           </div>
 
       </fieldset>

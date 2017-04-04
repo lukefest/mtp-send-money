@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Send money to a prisoner
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-beta">
+
+    <p>
+
+        <strong class="phase-tag">Beta</strong>
+
+        <span>
+          This is a new service.
+          You can <a href="/en-gb/help/">find help</a> or <a href="/en-gb/contact-us/">contact us</a> about this service.
+        </span>
+
+    </p>
+
+  </div>
+
+  <h1 class="heading-xlarge">
+
+      <span class="heading-secondary">Pay now by debit card</span>
+
+      Check details
+
+  </h1>
+
+  <div class="mtp-confirm">
+    <div class="mtp-checkgroup">
+      <div class="mtp-confirm-fieldset">
+        <h2 class="heading-large">Prisoner details</h2>
+        <table class="mtp-table">
+          <tbody><tr>
+            <th>Name:</th>
+            <td>James Halls</td>
+          </tr>
+          <tr>
+            <th>Date of birth:</th>
+            <td>21/01/1989</td>
+          </tr>
+          <tr>
+            <th>Prisoner number:</th>
+            <td>A1409AE</td>
+          </tr>
+        </tbody></table>
+      </div>
+
+      <div class="mtp-confirm-change">
+        <a href="/en-gb/debit-card/details/?focus=id_prisoner_name">Change <span class="visually-hidden">Name, date of birth or prisoner number</span></a>
+      </div>
+    </div>
+
+    <div class="mtp-checkgroup">
+      <div class="mtp-confirm-fieldset">
+        <h2 class="heading-large">Amount</h2>
+        <table class="mtp-table">
+
+            <tbody><tr>
+              <th>Total:</th>
+              <td>
+                £20
+              </td>
+            </tr>
+
+        </tbody></table>
+      </div>
+      <div class="mtp-confirm-change">
+        <a href="/en-gb/debit-card/amount/?focus=id_amount">Change<span class="visually-hidden">Amount</span></a>
+      </div>
+    </div>
+
+    <div>
+      <div class="mtp-confirm-change">
+        <a id="id_next_btn" class="button" href="/enter_card_details">Enter card details</a>
+      </div>
+      <div class="mtp-confirm-change">
+        <a href="/en-gb/clear-session/">Cancel and delete all details</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+{% endblock %}

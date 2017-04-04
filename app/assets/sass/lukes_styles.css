@@ -1,0 +1,94 @@
+
+/*
+--------------------------------------------------------
+Radio buttons choice - How to send money
+--------------------------------------------------------
+*/
+
+p.form-block {
+  padding-left: 9px;
+}
+
+/* -------------------------------------------------- */
+
+
+
+/*
+--------------------------------------------------------
+Dropdown thingy - How to send money
+--------------------------------------------------------
+*/
+
+details {
+  display: block;
+  clear: both;
+}
+
+details summary {
+  display: inline-block;
+  color: #005ea5;
+  cursor: pointer;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+details summary:hover {
+  color: #2b8cc4;
+}
+
+details summary:focus {
+  outline: 3px solid #ffbf47;
+}
+
+details .summary {
+  text-decoration: underline;
+}
+
+details .arrow {
+  margin-right: .35em;
+  font-style: normal;
+}
+
+#help-box-contents {
+  line-height: 2;
+  padding-left: 30px;
+}
+
+#help-box-contents ol {
+  padding-left: 40px;
+  margin-bottom: 0px;
+}
+
+/* -------------------------------------------------- */
+
+
+#id_prisoner_dob_0.form-control {
+  display: inline-block;
+  margin-right: 1em;
+  width: 3em;
+  min-width: 3em;
+}
+
+.form-date_day .form-date_month .form-date_year  {
+  display: inline-block;
+  margin-right: 1em
+}
+
+#id_prisoner_dob_1.form-control {
+  display: inline-block;
+  margin-right: 1em;
+  width: 3em;
+  min-width: 3em;
+}
+
+#id_prisoner_dob_2.form-control {
+  display: inline-block;
+  margin-right: 1em;
+  width: 5em;
+  min-width: 5em;
+}
+
+#form-date_day {
+  display: inline-block;
+}

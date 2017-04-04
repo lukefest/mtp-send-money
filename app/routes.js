@@ -12,24 +12,30 @@ router.get('/', function (req, res) {
 
 // add your routes here
 
-router.get('/debit_1_enter_prisoner_details', function (req, res) {
+router.get('/payment-choice', function (req, res) {
 
-  var debitCardUsed = req.query.id_debit_card;
+  var debitCardUsed = req.query.payment_method;
 
-  console.log(debitCardUsed + ' - Routed to debit card page');
+  console.log('Routed to ' + debitCardUsed);
 
   if(debitCardUsed == 'debit_card'){
 
-    res.render('/debit_1_enter_prisoner_details');
+    console.log('enter_prisoner_details');
+
+    // res.render('/Users/lukeforsythe/Google Drive/Money To Prisoners (MTP)/Design/UI/Prototyping/help_v1/app/views/debit-card/enter_prisoner_details.html');
+    res.render('enter_prisoner_details');
 
   }
 
   else {
 
-    res.redirect('/index');
+    console.log('/bank-transfer/before_you_continue');
+
+    res.redirect('/bank-transfer/before_you_continue');
 
   }
 
 });
+
 
 module.exports = router;
