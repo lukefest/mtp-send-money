@@ -4,6 +4,10 @@
   Send money to a prisoner
 {% endblock %}
 
+{% block head %}
+  {% include "includes/head-MTP.html" %}
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
@@ -49,7 +53,7 @@
                 £
               </span><input id="id_amount" class="form-control mtp-charges-amount" maxlength="10" name="amount" value="20.00" type="text" autocomplete="off" data-percentage-charge="0" data-fixed-charge="0">
             </div>
-            
+
           </div>
 
       </fieldset>

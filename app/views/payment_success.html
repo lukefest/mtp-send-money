@@ -4,6 +4,11 @@
   Send money to a prisoner
 {% endblock %}
 
+{% block head %}
+  {% include "includes/head-MTP.html" %}
+{% endblock %}
+
+
 {% block content %}
 
 <main role="main" id="content" tabindex="-1">
@@ -29,7 +34,6 @@
 
   <div class="print-hidden mtp-reference-actions">
 
-  <img id="print-image" src="public/images/print.jpg">
 
     <a class="mtp-print-reference" href="#">
       Print this page</a>
