@@ -4,7 +4,11 @@ var router = express.Router();
 // Route index page
 router.get('/', function (req, res) {
 
-  res.render('index');
+  if (req.query.version === '2') {
+    res.render('start-v2');
+  } else {
+    res.render('start-v1');
+  }
 
   console.log('Routed to home');
 
