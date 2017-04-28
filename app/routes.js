@@ -22,7 +22,6 @@ router.get('/payment-choice', function (req, res) {
 
     console.log('enter_prisoner_details');
 
-    // res.render('/Users/lukeforsythe/Google Drive/Money To Prisoners (MTP)/Design/UI/Prototyping/help_v1/app/views/debit-card/enter_prisoner_details.html');
     res.render('enter_prisoner_details');
 
   }

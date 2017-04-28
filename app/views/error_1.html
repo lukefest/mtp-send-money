@@ -1,9 +1,5 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-  GOV.UK prototype kit
-{% endblock %}
-
 {% block head %}
   {% include "includes/head-MTP.html" %}
 {% endblock %}
@@ -40,8 +36,6 @@
   </header>
 
   <form method="get" action="enter_amount">
-    <input type="hidden" name="csrfmiddlewaretoken" value="LZEbUqb9yUGwXlOJqc9E4tr5Gjx5ueTr">
-
     <div class="error-summary" aria-labelledby="error-summary-heading" tabindex="-1" role="alert">
     <h1 class="error-summary-heading heading-medium" id="error-summary-heading">
 
@@ -81,7 +75,6 @@
 
             </ul>
 
-            <!-- <a href="/help/details_dont_match" style="color:#005EA5;">More reasons why details might not match</a> -->
 
         </li>
 
