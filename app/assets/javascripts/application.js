@@ -25,4 +25,9 @@ $(document).ready(function () {
   // to toggle hidden content
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
+
+  $('a.link-back').click(function (e) {
+    window.history.back()
+    e.preventDefault()
+  })
 })

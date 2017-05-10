@@ -1,9 +1,5 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-  GOV.UK prototype kit
-{% endblock %}
-
 {% block head %}
   {% include "includes/head-MTP.html" %}
 {% endblock %}
@@ -12,27 +8,9 @@
 
 <main role="main" id="content" tabindex="-1">
 
-  <div class="phase-banner-beta">
-    <p>
-
-
-
-        <strong class="phase-tag phase-tag-dev">test</strong>
-
-      <span>
-        This is a new service.
-        You can <a href="/en-gb/contact-us/">contact us</a> with any feedback you have.
-      </span>
-    </p>
-  </div>
-
-
+  {% include "includes/banner.html" %}
 
   <header>
-
-
-
-
     <h1 class="heading-xlarge">
       <span class="heading-secondary">Pay now by debit card</span>
       Enter prisoner details
@@ -40,8 +18,6 @@
   </header>
 
   <form method="get" action="enter_amount">
-    <input type="hidden" name="csrfmiddlewaretoken" value="LZEbUqb9yUGwXlOJqc9E4tr5Gjx5ueTr">
-
     <div class="error-summary" aria-labelledby="error-summary-heading" tabindex="-1" role="alert">
     <h1 class="error-summary-heading heading-medium" id="error-summary-heading">
 
@@ -65,7 +41,7 @@
 
               <li>
                 <!-- The prisoner may be in a private prison. Please check this list of <a style="color:#005EA5;" href="https://send-money-to-prisoner.service.gov.uk/en-gb/help/prisons/">supported public prisons</a> -->
-                This service only supports <a style="color:#005EA5;" href="https://send-money-to-prisoner.service.gov.uk/en-gb/help/prisons/">public prisons in england and wales</a> so please check
+                This service only supports <a style="color:#005EA5;" href="https://send-money-to-prisoner.service.gov.uk/en-gb/help/prisons/">public prisons in England and Wales</a> so please check
               </li>
 
               <li>
@@ -76,12 +52,11 @@
               </li>
 
               <li>
-                The prisoner was released from prison
+                The prisoner has been released from prison
               </li>
 
             </ul>
 
-            <!-- <a href="/help/details_dont_match" style="color:#005EA5;">More reasons why details might not match</a> -->
 
         </li>
 

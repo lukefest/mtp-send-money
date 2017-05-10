@@ -1,16 +1,10 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-  Send money to a prisoner
-{% endblock %}
-
 {% block head %}
   {% include "includes/head-GOVUKPAY.html" %}
 {% endblock %}
 
 {% block content %}
-
-
 
 <main id="content" class="content-wrapper charge-new">
 
@@ -25,8 +19,6 @@
 <h1 class="form-title">Enter card details</h1>
 
   <form id="card-details" name="cardDetails" method="GET" action="/confirm_your_payment" class="form">
-      <input id="charge-id" name="chargeId" type="hidden" value="r03ug9meougte4cb42rpp5vedv">
-      <input id="csrf" name="csrfToken" type="hidden" value="KhqXYNYM-hqA9r-WANY1XGI2yjGhH80BfE4A">
       <div class="form-group card-no-group" data-validation="cardNo">
           <label id="card-no-lbl" for="card-no" class="form-label-bold">
               <span class="card-no-label" data-label-replace="cardNo" data-original-label="Card number">
@@ -555,7 +547,6 @@
   <form id="cancel" name="cancel" method="GET" action="#" class="form">
       <div>
           <input id="cancel-payment" type="submit" class="link" value="Cancel payment" name="cancel">
-          <input id="csrf2" name="csrfToken" type="hidden" value="KhqXYNYM-hqA9r-WANY1XGI2yjGhH80BfE4A">
       </div>
   </form>
 

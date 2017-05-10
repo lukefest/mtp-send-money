@@ -1,29 +1,14 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-  Send money to a prisoner
-{% endblock %}
-
 {% block head %}
   {% include "includes/head-MTP.html" %}
 {% endblock %}
-
 
 {% block content %}
 
 <main role="main" id="content" tabindex="-1">
 
-  <div class="phase-banner-beta">
-    <p>
-
-        <strong class="phase-tag phase-tag-dev">test</strong>
-
-      <span>
-        This is a new service.
-        You can <a href="/en-gb/contact-us/">contact us</a> with any feedback you have.      </span>
-    </p>
-  </div>
-
+  {% include "includes/banner.html" %}
 
   <div class="govuk-box-highlight">
     <h1 class="heading-large">Payment successful</h1>

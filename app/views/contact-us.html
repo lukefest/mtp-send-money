@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block head %}
+  {% include "includes/head-MTP.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <a class="link-back" href="/">Back</a>
+
+  <h1 class="heading-xlarge">
+    Contact us
+  </h1>
+
+
+  <form action="#" method="get" id="send-feedback">
+    <fieldset>
+      <legend class="visually-hidden">Your message</legend>
+      <div class="form-group ">
+        <label for="id_ticket_content" id="id_ticket_content-label" class="form-label">
+          Enter any questions or feedback you may have about this service
+        </label>
+        <textarea class="form-control" id="id_ticket_content" name="ticket_content" cols="40" rows="10"></textarea>
+        <p>
+          Please don’t include your bank details or any other personal information.
+        </p>
+      </div>
+
+      <h2 class="heading-medium">If you had difficulties using the service, please enter the prisoner’s details:</h2>
+
+      <div id="id_prisoner_number-wrapper" class="form-group ">
+        <label for="id_prisoner_number" id="id_prisoner_number-label" class="form-label">
+          Prisoner number
+        </label>
+        <div class="form-hint">For example, A1234BC</div>
+        <input id="id_prisoner_number" class="form-control " name="prisoner_number" value="" type="text"/>
+      </div>
+
+      <div id="id_prisoner_dob-wrapper" class="form-group ">
+        <label for="id_prisoner_dob" id="id_prisoner_dob-label" class="form-label">
+          Prisoner date of birth
+        </label>
+        <div class="form-hint">For example, 28/04/1996</div>
+        <input id="id_prisoner_dob" class="form-control " name="prisoner_dob" value="" type="text"/>
+      </div>
+
+      <h2 class="heading-medium">Enter your email address if you’d like a reply. We won’t use it for anything else.</h2>
+
+      <div id="id_contact_email-wrapper" class="form-group ">
+        <label for="id_contact_email" id="id_contact_email-label" class="form-label">
+          Your email address
+        </label>
+        <input id="id_contact_email" class="form-control " name="contact_email" value="" type="email"/>
+      </div>
+
+      <div class="form-group">
+        <a href="#" class="button">Send</a>
+      </div>
+    </fieldset>
+  </form>
+
+
+</main>
+
+{% endblock %}
